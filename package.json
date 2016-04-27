@@ -13,8 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.conf.js",
-    "serve": "webpack-dev-server --content-base public/ --config webpack.conf.js"
+    "build": "webpack --config webpack.config.js",
+    "serve": "webpack-dev-server --content-base public/ --config webpack.config.js"
   },
   "author": "Justin McCandless",
   "license": "MIT"
