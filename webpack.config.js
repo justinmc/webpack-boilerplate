@@ -1,4 +1,5 @@
 var path = require('path');
+
 module.exports = {
   entry: {
     app: ['./public/js/main.js']
@@ -12,14 +13,13 @@ module.exports = {
     port: '4000',
     hot: true
   },
-  loaders: [
-    {
-      test: /\.jsx?$/,
-      exclude: /(node_modules|bower_components)/,
-      loader: 'babel',
-      query: {
-        presets: ['es2015']
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel'
       }
-    }
-  ]
+    ]
+  }
 };
