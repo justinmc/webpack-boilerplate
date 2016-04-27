@@ -11,5 +11,15 @@ module.exports = {
   devServer: {
     port: '4000',
     hot: true
-  }
+  },
+  loaders: [
+    {
+      test: /\.jsx?$/,
+      exclude: /(node_modules|bower_components)/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015']
+      }
+    }
+  ]
 };
