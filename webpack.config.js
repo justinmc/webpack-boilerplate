@@ -5,7 +5,7 @@ module.exports = {
     app: ['./public/js/main.js']
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public/js'),
     publicPath: '/public/',
     filename: 'bundle.js'
   },
@@ -15,6 +15,11 @@ module.exports = {
   },
   module: {
     loaders: [
+      {
+        test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$|\.html$|\.txt$|\.ico$/,
+        loaders: ['file'],
+        include: 'public/'
+      },
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
