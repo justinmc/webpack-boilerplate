@@ -25,5 +25,6 @@ module.exports = {
         loader: 'eslint-loader',
       }
     ]
-  }
+  },
+  devtool: 'source-map',
 };
