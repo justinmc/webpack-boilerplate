@@ -1,7 +1,7 @@
 {
-  "name": "webpack-babel-boilerplate",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for projects using webpack, react, eslint, babel, and html5 boilerplate",
   "main": "public/js/main.js",
   "dependencies": {
     "react": "^15.0.1",
