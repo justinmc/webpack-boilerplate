@@ -23,6 +23,10 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'eslint-loader',
+      }, {
+        test: /\.scss$/,
+        include: /public\/css/,
+        loaders: ['style', 'css', 'sass'],
       }
     ]
   },

@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './home.jsx';
 
 ReactDOM.render(
-  <div>
-    <h1>webpack-boilerplate</h1>
-  </div>,
+  <Home />,
   document.querySelector('.app')
 );
