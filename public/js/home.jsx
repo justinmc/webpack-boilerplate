@@ -1,6 +1,6 @@
-require('../css/home.scss');
-
 import React from 'react';
+
+require('../css/home.scss');
 
 function Home() {
   return (
